@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cl.bastian.srinkquizz.views.LuckyFragment">
+
+    <CheckBox
+        android:layout_centerInParent="true"
+        android:id="@+id/happyCb"
+        android:text="¿Estás feliz?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:enabled="false"
+        android:id="@+id/moodCb"
+        android:layout_below="@+id/happyCb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:button="@drawable/cb_lucky"/>
+
+    <include layout="@layout/send_button"/>
+
+</RelativeLayout>
